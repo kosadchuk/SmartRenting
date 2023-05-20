@@ -1,0 +1,100 @@
+.footer {
+  border-top: 2px solid $BORDER;
+  padding: 40px 0;
+  position: relative;
+  @media all and (max-width: 767px) {
+    padding-bottom: 160px;
+  }
+  &_wrap {
+    align-items: center;
+    justify-content: space-between;
+  }
+  &_logo {
+    display: block;
+    margin-right: 24px;
+    img {
+      display: block;
+      max-width: 242px;
+      height: auto;
+      @media all and (max-width: 1023px) {
+        max-width: 180px;
+      }
+      @media all and (max-width: 767px) {
+        max-width: 140px;
+      }
+    }
+  }
+  &_soc {
+    text-align: center;
+    @media all and (max-width: 767px) {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 0 16px;
+      bottom: 24px;
+    }
+    &_wrap {
+      justify-content: center;
+    }
+    &_item {
+      margin-right: 8px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        background: $ORANGE;
+        border-radius: 7px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background: $ORANGE_HOVER;;
+        }
+        @media all and (max-width: 1023px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  &_watch {
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $GRAY;
+  }
+  &_year {
+    margin-top: 24px;
+    color: $GRAY;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &_info {
+    text-align: right;
+    p {
+      color: $GRAY;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 10px;
+      @media all and (max-width: 1023px) {
+        font-size: 14px;
+      }
+    }
+    a {
+      color: $GRAY;
+      font-size: 16px;
+      font-weight: 400;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      @media all and (max-width: 1023px) {
+        font-size: 14px;
+      }
+      &:hover {
+        color: $ORANGE_HOVER;
+      }
+    }
+  }
+}

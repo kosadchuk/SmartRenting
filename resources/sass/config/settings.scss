@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+$WHITE: #fff;
+$BLACK: #000;
+$GRAY: #333333;
+$DARK: #4F4F4F;
+$LIGHT_GRAY: #828282;
+$ORANGE: #F47500;
+$ORANGE_HOVER: #c76913;
+$LIGHT_ORANGE: #FFF7F1;
+$YELLOW: #F2C94C;
+$BORDER: #E0E0E0;
+
+* {
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+.body-overflow {
+	overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 16px;
+	width: 100%;
+	max-width: 1232px;
+}
+
+.fw {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.site-btn {
+	display: inline-block;
+	background: $ORANGE;
+	padding: 15px 24px;
+	font-size: 16px;
+	font-weight: 600;
+	color: $WHITE;
+	text-decoration: none;
+	border-radius: 100px;
+	transition: all 0.2s ease-in-out;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	&:hover {
+		background: $ORANGE_HOVER;
+	}
+}
+
+.h1 {
+	font-size: 36px;
+	color: $GRAY;
+	font-weight: 600;
+	line-height: 1.2em;
+	@media all and (max-width:767px) {
+		font-size: 28px;
+	}
+	&--thin {
+		font-weight: 500;
+	}
+}
+
+.h2 {
+	font-size: 32px;
+	color: $GRAY;
+	font-weight: 600;
+	line-height: 1.2em;
+	@media all and (max-width:767px) {
+		font-size: 24px;
+	}
+	&--thin {
+		font-weight: 500;
+	}
+}
+
+.site-input {
+	input {
+		border: 1px solid $BORDER;
+		border-radius: 32px;
+		padding: 0 24px;
+		color: $BLACK;
+		font-size: 16px;
+		font-weight: 400;
+		height: 58px;
+		line-height: 58px;
+		display: block;
+		max-width: 100%;
+		width: 100%;
+		outline: none;
+		background: none;
+	}
+	textarea {
+		border: 1px solid $BORDER;
+		border-radius: 12px;
+		padding: 16px 24px;
+		color: $BLACK;
+		font-size: 16px;
+		font-weight: 400;
+		height: 187px;
+		display: block;
+		max-width: 100%;
+		width: 100%;
+		outline: none;
+		background: none;
+		resize: none;
+		background: $WHITE;
+	}
+	label {
+		color: $LIGHT_GRAY;
+		font-size: 14px;
+		font-weight: 400;
+		margin-bottom: 4px;
+		display: block;
+		cursor: pointer;
+	}
+	.error {
+		display: none!important;
+	}
+	&.input--error {
+		label {
+			color: red;
+		}
+	}
+}

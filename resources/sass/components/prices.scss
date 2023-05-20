@@ -1,0 +1,59 @@
+.prices {
+  padding: 100px 0;
+  @media all and (max-width: 767px) {
+    padding: 80px 0;
+  }
+  &_wrap {
+    overflow: hidden;
+  }
+  &_item {
+    padding: 30px 0;
+    padding-left: 24px;
+    border-top: 1px solid $BORDER;
+    justify-content: space-between;
+    align-items: baseline;
+    @media all and (max-width: 767px) {
+      padding-left: 0;
+    }
+  }
+  &_description {
+    font-size: 16px;
+    font-weight: 400;
+    color: $DARK;
+    margin-right: 24px;
+    position: relative;
+    @media all and (max-width: 767px) {
+      font-size: 14px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100vw;
+      border: 1px dashed $ORANGE;
+      left: calc(100% + 6px);
+      top: 10px;
+      z-index: -1;
+      @media all and (max-width: 639px) {
+        display: none;
+      }
+    }
+  }
+  &_number {
+    font-size: 21px;
+    font-weight: 500;
+    color: $GRAY;
+    flex-shrink: 0;
+    background: $WHITE;
+    padding-left: 10px;
+    @media all and (max-width: 1023px) {
+      font-size: 18px;
+    }
+    @media all and (max-width: 767px) {
+      font-size: 14px;
+    }
+    @media all and (max-width: 639px) {
+      padding-left: 0;
+    }
+  }
+}

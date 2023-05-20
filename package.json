@@ -1,0 +1,21 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "watch": "vite",
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.7.5",
+        "vite": "^4.0.0"
+    },
+    "dependencies": {
+        "laravel-mix": "^6.0.49",
+        "node-sass": "^8.0.0",
+        "sass": "^1.62.1",
+        "svg-inliner": "^0.0.3",
+        "sweetalert": "^2.1.2"
+    }
+}

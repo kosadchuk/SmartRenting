@@ -1,0 +1,30 @@
+.hero {
+  margin-top: 100px;
+  @media all and (max-width: 767px) {
+    margin-top: 60px;
+  }
+  &_wrap {
+    padding-top: 65px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    min-height: 400px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @media all and (max-width: 767px) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+  &_content {
+    max-width: 275px;
+    p {
+      margin-top: 16px;
+      font-size: 16px;
+      font-weight: 500;
+      color: $DARK;
+      line-height: 1.5em;
+    }
+  }
+}

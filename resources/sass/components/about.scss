@@ -1,0 +1,106 @@
+.about {
+    padding-top: 100px;
+    @media all and (max-width: 767px) {
+        padding-top: 80px;
+    }
+
+    &_head {
+        margin-bottom: 24px;
+    }
+
+    &_items {
+        margin: -10px;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    &_item {
+        padding: 10px;
+        width: calc(100% / 3);
+        @media all and (max-width: 1023px) {
+            width: 50%;
+        }
+        @media all and (max-width: 479px) {
+            width: 100%;
+        }
+
+        &_wrap {
+            height: 100%;
+            padding: 24px;
+            background: $LIGHT_ORANGE;
+            border-radius: 12px;
+        }
+    }
+
+    &_icon {
+        width: 34px;
+        height: 34px;
+        margin-bottom: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &_text {
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            color: $GRAY;
+            line-height: 1.5em;
+            @media all and (max-width: 1023px) {
+                font-size: 16px;
+            }
+            @media all and (max-width: 1023px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &_more {
+        margin-top: 20px;
+        padding: 24px;
+        background: $LIGHT_ORANGE;
+        border-radius: 12px;
+        justify-content: space-between;
+        @media all and (max-width: 639px) {
+            display: block;
+        }
+    }
+
+    &_left {
+        h3 {
+            font-size: 24px;
+            font-weight: 400;
+            color: $GRAY;
+            margin-bottom: 12px;
+            @media all and (max-width: 1023px) {
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            color: $LIGHT_GRAY;
+            @media all and (max-width: 1023px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &_right {
+        flex-shrink: 0;
+        margin-left: 32px;
+        @media all and (max-width: 639px) {
+            margin: 0;
+            margin-top: 24px;
+            text-align: center;
+        }
+    }
+}
